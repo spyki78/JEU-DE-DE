@@ -1,0 +1,19 @@
+/*réglagle de base*/
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/*espacement bouton*/
+.bouton {
+  letter-spacing: 5px;
+}
+
+/*Taille Img dé*/
+img {
+  height: 100px;
+  width: 100px;
+}
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JEUX DE DE">
+  <meta name="keywords" content="jeux, de, deuxjoueurs">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="icon" type="image/x-icon" href="https://i.etsystatic.com/35700092/r/il/14c658/3972553674/il_794xN.3972553674_mky8.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+  crossorigin="anonymous"
+/>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+  crossorigin="anonymous"
+></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>JEUX DE DE</title>
+</head>
+
+<body>
+  <!--bouton new game-->
+  <header>
+    <div class="texte container-fluid px-0 d-flex justify-content-center mt-4">
+      <button class="bouton btn" type="button"><span id="boot-icon"class="bi bi-plus-circle" style="font-size: 2rem; color: rgb(255, 0, 0); -webkit-text-stroke-width: 0px; opacity: 0.5;"></span> NEW GAME</button>
+  </div>
+  </header>
+
+  
+  <main class=" text content banner container-fluid px-0 w-100">
+    <!--score player one-->
+    <section class="container text-center mt-3 mt-sm-5 pt-5">
+      <div class="row">
+        <div class="player1 col-lg-3 col-sm-3 col-md-4 mt-4">
+          <h2 class="display-5 mt-lg-4 me-ms-5">PLAYER 1<span class="mx-3 text-danger">●</span></h2>
+          <p class="score1 display-4 text-danger me-lg-5 me-ms-5 mt-2">0</p>
+        </div>
+      
+      <div class="result col-lg-6 col-sm-6 col-md-4 mt-5 mb-5 mt-4 text-danger pt-lg-3 pt-md-4 mt-lg-5 mt-md-5">
+        <div class="mt-lg-4"></div>
+        <!--Roll dice-->
+          <img class="mt-lg-2 object-fit-contain"src="" alt="">
+      </div>
+
+      <!--score player two-->
+      <div class="player2 col-lg-3 col-sm-3 col-md-4 mt-4">
+        <h2 class="display-5 mt-lg-4">PLAYER 2<span class="mx-3 text-danger">●</span></h2>
+        <p class="score2 display-4 text-danger me-lg-5 me-ms-5 mt-2">0</p>
+     </div>
+    </section> 
+
+    <footer class="container-fluid text-center px-0 w-100">
+      <div class="container text-center">
+        <div class="row">
+          <!--Current Score player one-->
+          <div class="player1 bg-danger col-lg-3 px-0 rounded-3 pt-1 pe-1 mt-5">
+            <h3 class="actuel pt-3">current</h3>
+            <span class="text-light display-6">0</span>
+          </div>
+          <!--Current Score player one-->
+          <div id="action"class="action col-lg-6 d-flex flex-column justify-content-center">
+            <button class="bouton btn col-lg-11 col-md-12 me-1 mt-3 mx-lg-4"><span id="boot-icon" class="bi bi-arrow-repeat" style="font-size: 2rem; color: rgb(255, 0, 0); opacity: 0.5;"></span> ROLL DICE</button>
+            <button class="bouton btn col-lg-11 col-md-12 me-1 mb-3 mx-lg-4"><span id="boot-icon" class="bi bi-arrow-down-square" style="font-size: 2rem; color: rgb(255, 0, 0); opacity: 0.5;"></span> HOLD</button>
+          </div>
+          <!--Current Score player one-->
+          <div class="player2 bg-danger col-lg-3 rounded-3 pt-1 mt-5 pe-1">
+            <h3 class="actuel pt-3">current</h3>
+            <span class="text-light display-6">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="script.js"></script>
+
+
+</body>
+</html>
+
+
+
