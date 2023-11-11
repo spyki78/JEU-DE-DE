@@ -4,6 +4,12 @@
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  font-family: 'Lato';
+}
+/*importation de la goole font*/
+@font-face {
+  font-family: 'Lato';
+  src: url(https://fonts.google.com/specimen/Lato );
 }
 
 /*espacement bouton*/
@@ -16,4 +22,5 @@ img {
   height: 100px;
   width: 100px;
 }
+
 
