@@ -42,7 +42,7 @@ rollDice.addEventListener("click", () => {
   const imageLink = imageSwitch(randomNumber); //Obtient le lien de l'image correspondant au nombre obtenu
   rollImage.src = imageLink; // Affiche l'image du dé correspondante
 
-  // Vérifie le résultat du lancer de dé
+  // Vérifie le résultat du lancer de dé si 1 passe à l'autre joueur
   if (randomNumber == 1) {
     if (player1.isPlaying == true) {
       player1.current = 0; // Réinitialise le score actuel du joueur 1 à zéro
