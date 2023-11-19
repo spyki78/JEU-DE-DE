@@ -1,9 +1,9 @@
 /* DOM */
 
 // Bouton
-const newGameDOM = document.querySelector("header>div>button"); // Bouton Nouvelle Partie
-const rollDice = document.querySelector(".action>button"); // Bouton Lancer le Dé
-const hold = document.querySelector(".action>button+button"); // Bouton Conserver
+const newGameDOM = document.querySelector("header>div>button"); // Bouton Nouvelle Partie "new game"
+const rollDice = document.querySelector(".action>button"); // Bouton Lancer le Dé "roll dice"
+const hold = document.querySelector(".action>button+button"); // Bouton Conserver "hold"
 
 // Sélection des éléments du DOM pour le dé
 const rollImage = document.querySelector(".result>div+img");
@@ -105,25 +105,32 @@ newGameDOM.addEventListener("click", () => {
 
 // Mise à jour du DOM
 function domUpdate(isGameOver, isPlayer1) {
+  // Vérifie si le jeu est terminé
   if (isGameOver) {
+    // Affiche les éléments DOM pour le joueur 1 et masque ceux du joueur 2
     player1RoundDOM.style.visibility = "visible";
     player2RoundDOM.style.visibility = "hidden";
 
+    // Met à jour les scores affichés pour les deux joueurs
     player1ScoreDOM.textContent = player1.score;
     player2ScoreDOM.textContent = player2.score;
 
+    // Met à jour les valeurs actuelles des dés pour les deux joueurs
     playerCurrent1DOM.textContent = player1.current;
     playerCurrent2DOM.textContent = player2.current;
-
     //rollOfDiceNumber.textContent = "0";
   } else {
+    // Si le jeu n'est pas terminé, détermine quel joueur doit jouer
     if (isPlayer1) {
+      // Affiche les éléments DOM pour le joueur 2 et masque ceux du joueur 1
       player1RoundDOM.style.visibility = "hidden";
       player2RoundDOM.style.visibility = "visible";
 
+      // Met à jour les scores affichés et les valeurs actuelles des dés pour le joueur 1
       player1ScoreDOM.textContent = player1.score;
       playerCurrent1DOM.textContent = player1.current;
     } else {
+      // Affiche les éléments DOM pour le joueur 1 et masque ceux du joueur 2
       player1RoundDOM.style.visibility = "visible";
       player2RoundDOM.style.visibility = "hidden";
 
